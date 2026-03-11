@@ -43,6 +43,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "2️⃣ بعد ظهور الكاميرا انتظر الوقت الآخر لالتقاط الصورة\n\n"
             "لأي استفسار، تواصل معنا في الدعم "
             "<a href='https://t.me/ansalif'>@ansalif</a>\n\n"
+            "قيمة سستم توقيت العالمي 50 الف للشتراك تواصل معي"
             "شكراً لاستخدامك البوت!",
             parse_mode="HTML"
         )
