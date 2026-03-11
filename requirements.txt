@@ -1,9 +1,1 @@
 python-telegram-bot==20.7
-
-git config --global user.name "AliHamad2022"
-git config --global user.email "atqqnle11@gmail.com"
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/USERNAME/REPO_NAME.git
-git push -u origin master
