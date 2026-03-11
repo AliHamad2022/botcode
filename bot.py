@@ -1,6 +1,8 @@
 import re
 
+# ---------------------------------------------
 # استيراد مكتبات Telegram
+# ---------------------------------------------
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import (
     ApplicationBuilder,
@@ -92,11 +94,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # تشغيل البوت
 # ---------------------------------------------
 if __name__ == "__main__":
+    # إنشاء التطبيق
     app = ApplicationBuilder().token(TOKEN).build()
 
     # إضافة الهاندلرز
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
-    # تشغيل البوت
+    # تشغيل البوت بطريقة آمنة مع الإصدار 20+
     app.run_polling()
